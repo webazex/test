@@ -66,7 +66,7 @@ function realEstateDeactivation(){
 register_deactivation_hook( __FILE__, 'realEstateDeactivation' );
 
 function realEstateUninstall(){
-	//delete_option('my_option');
+	delete_option('real_estate_activated');
 }
 register_uninstall_hook( __FILE__, 'realEstateUninstall' );
 
